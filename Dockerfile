@@ -35,6 +35,10 @@ RUN apt install git -y
 
 RUN git clone https://github.com/MyersResearchGroup/iBioSim.git
 
+RUN cd iBioSim
+
+RUN mvn package
+
 # Copy code for command-line interface into image and install it
 COPY . /root/Biosimulations_iBioSim
 RUN python3.7 -m pip install /root/Biosimulations_iBioSim
