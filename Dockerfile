@@ -25,24 +25,23 @@ RUN pip3 install -U setuptools
 
 RUN pip3 install cement
 
-RUN pip3 install jsonschema==3.0.2
-	
-RUN apt install default-jdk -y
+RUN apt install openjdk-8-jdk -y	
 
-RUN apt install maven -y
+RUN apt install maven -y 
 
 RUN apt install git -y
 
 RUN git clone https://github.com/MyersResearchGroup/iBioSim.git
 
-RUN cd iBioSim
-
-RUN mvn package
+RUN cd iBioSim \
+	&& mvn package -Dmaven.javadoc.skip=true
 
 # Copy code for command-line interface into image and install it
+RUN echo no-cache1
 COPY . /root/Biosimulations_iBioSim
 RUN python3.7 -m pip install /root/Biosimulations_iBioSim
 
+#Installing reb2sac and GeneNet
 
 # Entrypoint
 ENTRYPOINT ["iBioSim"]

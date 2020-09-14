@@ -6,7 +6,7 @@
 :License: Apache-2.0
 """
 
-from core import exec_combine_archive
+from .core import exec_combine_archive
 import Biosimulations_iBioSim
 import cement
 
