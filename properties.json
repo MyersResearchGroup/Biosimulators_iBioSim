@@ -1,9 +1,9 @@
 {
-  "id": "id_of_simulator",
-  "name": "Name of simulator",
-  "version": "1.0.0",
-  "description": "Description of simulator.",
-  "url": "https://url.for.simulator/",
+  "id": "ibiosim",
+  "name": "iBioSim",
+  "version": "3.0.0",
+  "description": "iBioSim is a computer-aided design (CAD) tool aimed for the modeling, analysis, and design of genetic circuits. While iBioSim primarily targets models of genetic circuits, models representing metabolic networks, cell-signaling pathways, and other biological and chemical systems can also be analyzed.",
+  "url": "https://github.com/MyersResearchGroup/iBioSim",
   "dockerHubImageId": "organization/repository:tag",
   "format": {
     "name": "Docker Image",
@@ -12,14 +12,39 @@
   },
   "authors": [
     {
-      "firstName": "John",
-      "middleName": "C",
-      "lastName": "Doe"
+      "firstName": "Chris",
+      "middleName": "J",
+      "lastName": "Myers"
     },
     {
-      "firstName": "Jane",
-      "middleName": "D",
-      "lastName": "Doe"
+      "firstName": "Leandro",
+      "middleName": "",
+      "lastName": "Watanabe"
+    }
+	{
+      "firstName": "Tramy",
+      "middleName": "",
+      "lastName": "Nguyen"
+    }
+	{
+      "firstName": "Pedor",
+      "middleName": "",
+      "lastName": "Fontanarosa"
+    }
+	{
+      "firstName": "Michael",
+      "middleName": "",
+      "lastName": "Zhang"
+    }
+	{
+      "firstName": "Zach",
+      "middleName": "",
+      "lastName": "Zundel"
+    }
+	{
+      "firstName": "Mihai",
+      "middleName": "",
+      "lastName": "Glont"
     }
   ],
   "references": [
@@ -33,7 +58,7 @@
       "doi": "XX.XXX/XXXXX"
     }
   ],
-  "license": "MIT",
+  "license": "Apache-2.0",
   "algorithms": [
     {
       "id": "cvode",
