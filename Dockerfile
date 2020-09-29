@@ -15,6 +15,7 @@ LABEL extra.identifiers.biotools="ibiosim"
 LABEL maintainer="Chris Myers <chris.myers@colorado.edu>"
 
 # Install requirements
+RUN echo no-cache1
 RUN apt-get update --fix-missing
 
 RUN apt-get install python3.7 -y
@@ -23,7 +24,7 @@ RUN apt-get install python3-pip -y
 
 RUN pip3 install -U setuptools
 
-RUN pip3 install cement
+#RUN pip3 install cement
 
 RUN apt install openjdk-8-jdk -y	
 
@@ -37,11 +38,14 @@ RUN cd iBioSim \
 	&& mvn package -Dmaven.javadoc.skip=true
 
 # Copy code for command-line interface into image and install it
-RUN echo no-cache1
 COPY . /root/Biosimulations_iBioSim
 RUN python3.7 -m pip install /root/Biosimulations_iBioSim
 
 #Installing reb2sac and GeneNet
+RUN apt-get install libgsl-dev -y
+RUN apt install gcc
+
+
 
 # Entrypoint
 ENTRYPOINT ["iBioSim"]
