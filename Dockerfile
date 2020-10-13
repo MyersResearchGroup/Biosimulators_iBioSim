@@ -15,24 +15,16 @@ LABEL extra.identifiers.biotools="ibiosim"
 LABEL maintainer="Chris Myers <chris.myers@colorado.edu>"
 
 # Install requirements
-RUN echo no-cache1
-RUN apt-get update --fix-missing
+RUN apt-get update --fix-missing \
+	&& apt-get install python3.7 -y \
+	&& apt-get install python3-pip -y \
+	&& pip3 install -U setuptools \
+	&& pip3 install python-libsbml
 
-RUN apt-get install python3.7 -y
-
-RUN apt-get install python3-pip -y
-
-RUN pip3 install -U setuptools
-
-#RUN pip3 install cement
-
-RUN apt install openjdk-8-jdk -y	
-
-RUN apt install maven -y 
-
-RUN apt install git -y
-
-RUN git clone https://github.com/MyersResearchGroup/iBioSim.git
+RUN apt install openjdk-8-jdk -y \
+	&& apt install maven -y \
+	&& apt install git -y \
+	&& git clone https://github.com/MyersResearchGroup/iBioSim.git 
 
 RUN cd iBioSim \
 	&& mvn package -Dmaven.javadoc.skip=true
@@ -42,10 +34,7 @@ COPY . /root/Biosimulations_iBioSim
 RUN python3.7 -m pip install /root/Biosimulations_iBioSim
 
 #Installing reb2sac and GeneNet
-RUN apt-get install libgsl-dev -y
-RUN apt install gcc
-
-
+#need to compile reb2sac outside of image and copy it in 
 
 # Entrypoint
 ENTRYPOINT ["iBioSim"]

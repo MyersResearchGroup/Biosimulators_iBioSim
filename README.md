@@ -39,7 +39,7 @@ docker run \
   --rm \
   --mount type=bind,source="$(pwd)"/tests/fixtures,target=/root/in,readonly \
   --mount type=bind,source="$(pwd)"/tests/results,target=/root/out \
-  crbm/biosimulations_copasi:latest \
+  paytonco/ibiosim:latest \
     -i /root/in/<Need to Update to Cleaned Archive> \
     -o /root/out
 ```
