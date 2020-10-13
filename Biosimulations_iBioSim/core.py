@@ -7,7 +7,7 @@
 """
 
 import os
-import zipfile
+#import zipfile
 import shutil
 
 __all__ = ['exec_combine_archive']
