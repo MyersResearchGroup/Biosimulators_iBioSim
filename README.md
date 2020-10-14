@@ -48,7 +48,7 @@ docker run \
 This package is released under the [Apache-2.0](License)
 
 ## Development Team
-This package was developed by the [Genetic Logic Lab](https://myersresearchgroup.github.io/) at the University of Colorado Boulder and the [Center for Reproducible Biomedical Modeling](http://reproduciblebiomodels.org).
+This package was developed by the [Genetic Logic Lab](https://myersresearchgroup.github.io/) at the University of Colorado Boulder.
 
 ## Questions and comments
-Please contact the [Center for Reproducible Biomedical Modeling](mailto:info@reproduciblebiomodels.org) with any questions or comments.
+Please contact the [Genetic Logic Lab](mailto:chris.myers@colorado.edu) with any questions or comments.
