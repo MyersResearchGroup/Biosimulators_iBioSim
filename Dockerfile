@@ -30,7 +30,6 @@ RUN cd iBioSim \
 	&& mvn package -Dmaven.javadoc.skip=true
 
 # Copy code for command-line interface into image and install it
-RUN echo nocache
 COPY . /root/Biosimulators_iBioSim
 RUN python3.7 -m pip install /root/Biosimulators_iBioSim
 

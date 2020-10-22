@@ -25,7 +25,7 @@ md = pkg_utils.get_package_metadata(dirname, name)
 setuptools.setup(
     name=name,
     version=md.version,
-    description=("BioSimulations-compliant command-line interface to "
+    description=("BioSimulators-compliant command-line interface to "
                  "the iBioSim simulation program https://async.ece.utah.edu/tools/ibiosim/."),
     long_description=md.long_description,
     url="https://github.com/MyersResearchGroup/iBioSim",
@@ -47,7 +47,7 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'iBioSim = Biosimulations_iBioSim.__main__:main',
+            'iBioSim = Biosimulators_iBioSim.__main__:main',
         ],
     },
 )
