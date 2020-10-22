@@ -30,8 +30,8 @@ RUN cd iBioSim \
 	&& mvn package -Dmaven.javadoc.skip=true
 
 # Copy code for command-line interface into image and install it
-COPY . /root/Biosimulations_iBioSim
-RUN python3.7 -m pip install /root/Biosimulations_iBioSim
+COPY . /root/Biosimulators_iBioSim
+RUN python3.7 -m pip install /root/Biosimulators_iBioSim
 
 #Installing reb2sac and GeneNet
 #need to compile reb2sac outside of image and copy it in 

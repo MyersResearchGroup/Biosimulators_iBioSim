@@ -138,22 +138,14 @@
   "license": "Apache-2.0",
   "algorithms": [
     {
-      "id": "cvode",
-      "name": "C-language Variable-coefficient Ordinary Differential Equation solver",
+      "id": "hode",
+      "name": "Runge-Kutta-Fehlberg (Hierarchical)",
       "kisaoTerm": {
         "ontology": "KISAO",
-        "id": "0000019",
-        "name": "CVODE",
-        "description": "The CVODE is a package written in C that solves ODE initial value problems, in real N-space, written as y'=f(t,y), y(t0)=y0. It is capable for stiff and non-stiff systems and uses two different linear multi-step methods, namely the Adam-Moulton [http://identifiers.org/biomodels.kisao/KISAO_0000280] method and the backward differentiation formula [http://identifiers.org/biomodels.kisao/KISAO_0000288]."
+        "id": "0000064",
+        "name": "Runge-Kutta based method",
+        "description": "A method of numerically integrating ordinary differential equations, which uses a sampling of slopes through an interval and takes a weighted average to determine the right end point. This averaging gives a very accurate approximation."
       },
-      "ontologyTerms": [
-        {
-          "ontology": "KISAO",
-          "id": "0000433",
-          "name": "CVODE-like method",
-          "description": "Solves ODE initial value problems, in real N-space, written as y'=f(t,y), y(t0)=y0. It is capable for stiff and non-stiff systems and uses two different linear multi-step methods, namely the Adam-Moulton [http://identifiers.org/biomodels.kisao/KISAO_0000280] method and the backward differentiation formula [http://identifiers.org/biomodels.kisao/KISAO_0000288]."
-        }
-      ],
       "modelingFrameworks": [
         {
           "ontology": "SBO",
@@ -198,17 +190,6 @@
           "specUrl": "http://identifiers.org/combine.specifications/omex",
           "mimeType": "application/zip",
           "extension": "omex"
-        }
-      ],
-      "references": [
-        {
-          "title": "title",
-          "authors": "John C Doe, Jane D Doe & Jack E Doe",
-          "journal": "journal",
-          "volume": 10,
-          "pages": "1-10",
-          "year": 2020,
-          "doi": "XX.XXX/XXXXX"
         }
       ],
       "parameters": [

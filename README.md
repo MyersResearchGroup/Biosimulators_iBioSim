@@ -1,5 +1,5 @@
-# Biosimulations_iBioSim
-BioSimulations-compliant command-line interface to the [iBioSim](https://github.com/MyersResearchGroup/iBioSim) simulation program.
+# Biosimulators_iBioSim
+BioSimulators-compliant command-line interface to the [iBioSim](https://github.com/MyersResearchGroup/iBioSim) simulation program.
 
 ## Contents
 * [Installation](#installation)
@@ -18,7 +18,7 @@ docker pull paytonco/ibiosim
 ```
 usage: ibiosim [-h] [-d] [-q] -i ARCHIVE [-o OUT_DIR] [-v]
 
-BioSimulations-compliant command-line interface to the [iBioSim](https://github.com/MyersResearchGroup/iBioSim) simulation program.
+BioSimulators-compliant command-line interface to the [iBioSim](https://github.com/MyersResearchGroup/iBioSim) simulation program.
 
 optional arguments:
   -h, --help            show this help message and exit
