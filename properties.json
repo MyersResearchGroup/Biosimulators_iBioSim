@@ -192,6 +192,17 @@
           "extension": "omex"
         }
       ],
+	  "references": [
+        {
+          "title": "Low-order classical Runge-Kutta formulas with stepsize control and their application to some heat transfer problems",
+          "authors": "Erwin Fehlberg",
+          "journal": "NASA",
+          "volume": ,
+          "pages": "1-49",
+          "year": 1969,
+          "doi": ""
+        }
+      ],
       "parameters": [
         {
           "kisaoTerm": {
