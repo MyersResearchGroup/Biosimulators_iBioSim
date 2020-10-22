@@ -1,4 +1,4 @@
-""" BioSimulations-compliant command-line interface to the `iBioSim <https://async.ece.utah.edu/tools/ibiosim/>`_ simulation program.
+""" BioSimulators-compliant command-line interface to the `iBioSim <https://async.ece.utah.edu/tools/ibiosim/>`_ simulation program.
 
 :Author: Myers Research Group, chris.myers@colorado.edu
 :Date: 2020-06-12
@@ -7,7 +7,7 @@
 """
 
 from .core import exec_combine_archive
-import Biosimulations_iBioSim
+import Biosimulators_iBioSim
 import cement
 
 
@@ -16,7 +16,7 @@ class BaseController(cement.Controller):
 
     class Meta:
         label = 'base'
-        description = ("BioSimulations-compliant command-line interface to the "
+        description = ("BioSimulatiors-compliant command-line interface to the "
                        "iBioSim simulation program <https://async.ece.utah.edu/tools/ibiosim/>.")
         help = "iBioSim"
         arguments = [
@@ -27,7 +27,7 @@ class BaseController(cement.Controller):
                                        default='.',
                                        help='Directory to save outputs')),
             (['-v', '--version'], dict(action='version',
-                                       version=Biosimulations_iBioSim.__version__)),
+                                       version=Biosimulators_iBioSim.__version__)),
         ]
 
     @cement.ex(hide=True)
