@@ -26,7 +26,7 @@ setuptools.setup(
     name=name,
     version=md.version,
     description=("BioSimulators-compliant command-line interface to "
-                 "the iBioSim simulation program https://async.ece.utah.edu/tools/ibiosim/."),
+                 "the iBioSim simulation program https://github.com/MyersResearchGroup/iBioSim."),
     long_description=md.long_description,
     url="https://github.com/MyersResearchGroup/iBioSim",
     download_url="https://github.com/MyersResearchGroup/iBioSim",
