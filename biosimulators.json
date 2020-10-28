@@ -100,59 +100,62 @@
       "lastName": "Zhang"
     }
   ],
-  "citations": [{
-      "title": "Design and test of genetic circuits using iBioSim",
-      "authors": "Curtis Madsen, Chris J. Myers, Tyler Patterson, Nicholas Roehner, Jason T. Stevens & Chris Winstead",
-      "journal": "IEEE Design Test of Computers",
-      "volume": 29,
-      "pages": "32-39",
-      "year": 2012,
-      "identifiers": [{
-        "namespace": "doi",
-        "id": "10.1109/MDT.2012.2187875",
-        "url": "https://doi.org/10.1109/MDT.2012.2187875"
-      }]
-    },
-    {
-      "title": "Dynamic modeling of cellular populations within iBioSim",
-      "authors": "Jason T. Stevens & Chris J. Myers",
-      "journal": "ACS Synthetic Biology",
-      "volume": 2,
-      "pages": "223-229",
-      "year": 2013,
-      "identifiers": [{
-        "namespace": "doi",
-        "id": "10.1021/sb300082b",
-        "url": "https://doi.org/10.1021/sb300082b"
-      }]
-    },
-    {
-      "title": "iBioSim: a tool for the analysis and design of genetic circuits",
-      "authors": "Chris J. Myers, Nathan Barker, Kevin Jones, Hiroyuki Kuwahara, Curtis Madsen & Nam-Phuong D. Nguyen",
-      "journal": "Bioinformatics",
-      "volume": 25,
-      "pages": "2848-2849",
-      "year": 2009,
-      "identifiers": [{
-        "namespace": "doi",
-        "id": "10.1093/bioinformatics/btp457",
-        "url": "https://doi.org/10.1093/bioinformatics/btp457"
-      }]
-    },
-    {
-      "title": "iBioSim 3: a tool for model-based genetic circuit design",
-      "authors": "Leandro Watanabe, Tramy Nguyen, Michael Zhang, Zach Zundel, Zhen Zhang, Curtis Madsen, Nicholas Roehner & Chris J. Myers",
-      "journal": "ACS Synthetic Biology",
-      "volume": 8,
-      "pages": "1560-1563",
-      "year": 2019,
-      "identifiers": [{
-        "namespace": "doi",
-        "id": "10.1021/acssynbio.8b00078",
-        "url": "https://doi.org/10.1021/acssynbio.8b00078"
-      }]
-    }
-  ],
+  "references": {
+    "identifiers": [],
+    "citations": [{
+        "title": "Design and test of genetic circuits using iBioSim",
+        "authors": "Curtis Madsen, Chris J. Myers, Tyler Patterson, Nicholas Roehner, Jason T. Stevens & Chris Winstead",
+        "journal": "IEEE Design Test of Computers",
+        "volume": 29,
+        "pages": "32-39",
+        "year": 2012,
+        "identifiers": [{
+          "namespace": "doi",
+          "id": "10.1109/MDT.2012.2187875",
+          "url": "https://doi.org/10.1109/MDT.2012.2187875"
+        }]
+      },
+      {
+        "title": "Dynamic modeling of cellular populations within iBioSim",
+        "authors": "Jason T. Stevens & Chris J. Myers",
+        "journal": "ACS Synthetic Biology",
+        "volume": 2,
+        "pages": "223-229",
+        "year": 2013,
+        "identifiers": [{
+          "namespace": "doi",
+          "id": "10.1021/sb300082b",
+          "url": "https://doi.org/10.1021/sb300082b"
+        }]
+      },
+      {
+        "title": "iBioSim: a tool for the analysis and design of genetic circuits",
+        "authors": "Chris J. Myers, Nathan Barker, Kevin Jones, Hiroyuki Kuwahara, Curtis Madsen & Nam-Phuong D. Nguyen",
+        "journal": "Bioinformatics",
+        "volume": 25,
+        "pages": "2848-2849",
+        "year": 2009,
+        "identifiers": [{
+          "namespace": "doi",
+          "id": "10.1093/bioinformatics/btp457",
+          "url": "https://doi.org/10.1093/bioinformatics/btp457"
+        }]
+      },
+      {
+        "title": "iBioSim 3: a tool for model-based genetic circuit design",
+        "authors": "Leandro Watanabe, Tramy Nguyen, Michael Zhang, Zach Zundel, Zhen Zhang, Curtis Madsen, Nicholas Roehner & Chris J. Myers",
+        "journal": "ACS Synthetic Biology",
+        "volume": 8,
+        "pages": "1560-1563",
+        "year": 2019,
+        "identifiers": [{
+          "namespace": "doi",
+          "id": "10.1021/acssynbio.8b00078",
+          "url": "https://doi.org/10.1021/acssynbio.8b00078"
+        }]
+      }
+    ]
+  },
   "license": {
     "namespace": "SPDX",
     "id": "Apache-2.0"
