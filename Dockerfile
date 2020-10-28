@@ -10,7 +10,7 @@ LABEL about.home="https://github.com/MyersResearchGroup/iBioSim"
 LABEL about.documentation="https://github.com/MyersResearchGroup/iBioSim"
 LABEL about.license_file="https://github.com/MyersResearchGroup/iBioSim/blob/master/LICENSE.txt"
 LABEL about.license="Apache-2.0"
-LABEL about.tags=""
+LABEL about.tags="kinetic modeling,dynamical simulation,systems biology,biochemical networks,SBML,SED-ML,COMBINE,OMEX,BioSimulators"
 LABEL extra.identifiers.biotools="ibiosim"
 LABEL maintainer="Chris Myers <chris.myers@colorado.edu>"
 
