@@ -1,215 +1,215 @@
 {
   "id": "ibiosim",
   "name": "iBioSim",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "iBioSim is a computer-aided design (CAD) tool aimed for the modeling, analysis, and design of genetic circuits. While iBioSim primarily targets models of genetic circuits, models representing metabolic networks, cell-signaling pathways, and other biological and chemical systems can also be analyzed.",
   "url": "https://github.com/MyersResearchGroup/iBioSim",
-  "dockerHubImageId": "organization/repository:tag",
+  "image": "docker.io/paytonco/ibiosim:latest",
   "format": {
-    "name": "Docker Image",
-    "version": "1.2",
-    "spec_url": "https://github.com/moby/moby/blob/master/image/spec/v1.2.md"
+    "namespace": "EDAM",
+    "id": "format_3973"
   },
   "authors": [
     {
       "firstName": "Chris",
-      "middleName": "J",
+      "middleName": "J.",
       "lastName": "Myers"
     },
     {
       "firstName": "Leandro",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Watanabe"
-    }
+    },
 	{
       "firstName": "Tramy",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Nguyen"
-    }
+    },
 	{
       "firstName": "Pedro",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Fontanarosa"
-    }
+    },
 	{
       "firstName": "Michael",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Zhang"
-    }
+    },
 	{
       "firstName": "Zach",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Zundel"
-    }
+    },
 	{
       "firstName": "Mihai",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Glont"
-    }
+    },
 	{
       "firstName": "Nathan",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Barker"
-    }
+    },
 	{
       "firstName": "Scott",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Glass"
-    }
+    },
 	{
       "firstName": "Kevin",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Jones"
-    }
+    },
 	{
       "firstName": "Hiroyuki",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Kuwahara"
-    }
+    },
 	{
       "firstName": "Curtis",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Madsen"
-    }
+    },
 	{
       "firstName": "Nam",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Nguyen"
-    }
+    },
 	{
       "firstName": "Tyler",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Patterson"
-    }
+    },
 	{
       "firstName": "Nicholas",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Roehner"
-    }
+    },
 	{
       "firstName": "Jason",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Stevens"
-    }
+    },
+    {
+      "firstName": "Payton",
+      "middleName": "J.",
+      "lastName": "Thomas"
+    },
 	{
       "firstName": "Zhen",
-      "middleName": "",
+      "middleName": null,
       "lastName": "Zhang"
     }
   ],
-  "references": [
+  "citations": [
     {
-      "title": "Design and Test of Genetic Circuits Using iBioSim",
-      "authors": "Curtis Madsen, Chris J. Myers, Tyler Patterson, Nicholas Roehner, Jason T. Stevens, Chris Winstead"
+      "title": "Design and test of genetic circuits using iBioSim",
+      "authors": "Curtis Madsen, Chris J. Myers, Tyler Patterson, Nicholas Roehner, Jason T. Stevens & Chris Winstead",
       "journal": "IEEE Design Test of Computers",
       "volume": 29,
       "pages": "32-39",
       "year": 2012,
-      "doi": "10.1109/MDT.2012.2187875"
-    }
+      "identifiers": [{
+        "namespace": "doi",
+        "id": "10.1109/MDT.2012.2187875",
+        "url": "https://doi.org/10.1109/MDT.2012.2187875"
+      }]
+    },
 	{
-      "title": "Dynamic Modeling of Cellular Populations within iBioSim",
-      "authors": "Jason T. Stevens, Chris J. Myers"
+      "title": "Dynamic modeling of cellular populations within iBioSim",
+      "authors": "Jason T. Stevens & Chris J. Myers",
       "journal": "ACS Synthetic Biology",
       "volume": 2,
       "pages": "223-229",
       "year": 2013,
-      "doi": "10.1021/sb300082b"
-    }
+      "identifiers": [{
+        "namespace": "doi",
+        "id": "10.1021/sb300082b",
+        "url": "https://doi.org/10.1021/sb300082b"
+      }]
+    },
 	{
-      "title": "iBioSim: A Tool for the Analysis and Design of Genetic Circuits",
-      "authors": "Chris J. Myers, Nathan Barker, Kevin Jones, Hiroyuki Kuwahara, Curtis Madsen, Nam-Phuong D. Nguyen"
+      "title": "iBioSim: a tool for the analysis and design of genetic circuits",
+      "authors": "Chris J. Myers, Nathan Barker, Kevin Jones, Hiroyuki Kuwahara, Curtis Madsen & Nam-Phuong D. Nguyen",
       "journal": "Bioinformatics",
       "volume": 25,
       "pages": "2848-2849",
       "year": 2009,
-      "doi": "10.1093/bioinformatics/btp457"
-    }
+      "identifiers": [{
+        "namespace": "doi",
+        "id": "10.1093/bioinformatics/btp457",
+        "url": "https://doi.org/10.1093/bioinformatics/btp457"
+      }]
+    },
 	{
-      "title": "iBioSim 3: A Tool for Model-Based Genetic Circuit Design",
-      "authors": "Leandro Watanabe, Tramy Nguyen, Michael Zhang, Zach Zundel, Zhen Zhang, Curtis Madsen, Nicholas Roehner, Chris Myers"
+      "title": "iBioSim 3: a tool for model-based genetic circuit design",
+      "authors": "Leandro Watanabe, Tramy Nguyen, Michael Zhang, Zach Zundel, Zhen Zhang, Curtis Madsen, Nicholas Roehner & Chris J. Myers",
       "journal": "ACS Synthetic Biology",
       "volume": 8,
       "pages": "1560-1563",
       "year": 2019,
-      "doi": "10.1021/acssynbio.8b00078"
+      "identifiers": [{
+        "namespace": "doi",
+        "id": "10.1021/acssynbio.8b00078",
+        "url": "https://doi.org/10.1021/acssynbio.8b00078"
+      }]
     }
   ],
-  "license": "Apache-2.0",
+  "license": {
+    "namespace": "SPDX",
+    "id": "Apache-2.0"
+  },
   "algorithms": [
     {
       "id": "hode",
       "name": "Runge-Kutta-Fehlberg (Hierarchical)",
-      "kisaoTerm": {
-        "ontology": "KISAO",
-        "id": "0000064",
-        "name": "Runge-Kutta based method",
-        "description": "A method of numerically integrating ordinary differential equations, which uses a sampling of slopes through an interval and takes a weighted average to determine the right end point. This averaging gives a very accurate approximation."
+      "kisaoId": {
+        "namespace": "KISAO",
+        "id": "KISAO_0000086"
       },
       "modelingFrameworks": [
         {
-          "ontology": "SBO",
-          "id": "0000293",
-          "name": "non-spatial continuous framework",
-          "description": "Modelling approach where the quantities of participants are considered continuous, and represented by real values. The associated simulation methods make use of differential equations. The models do not take into account the distribution of the entities and describe only the temporal fluxes.",
-          "iri": "http://biomodels.net/SBO/SBO_0000293"
+          "namespace": "SBO",
+          "id": "SBO_0000293"
         }
       ],
       "modelFormats": [
         {
-          "id": "SBML",
-          "name": "Systems Biology Markup Language",
-          "version": "L3V2",
-          "edamId": "format_2585",
-          "url": "http://sbml.org",
-          "specUrl": "http://identifiers.org/combine.specifications/sbml",
-          "mimeType": "application/sbml+xml",
-          "extension": "xml",
-          "sedUrn": "urn:sedml:language:sbml"
+          "namespace": "EDAM",
+          "id": "format_2585"
         }
       ],
       "simulationFormats": [
         {
-          "id": "SED-ML",
-          "name": "Simulation Experiment Description Markup Language",
-          "version": "L1V3",
-          "edamId": "format_3685",
-          "url": "https://sed-ml.org",
-          "specUrl": "http://identifiers.org/combine.specifications/sed-ml",
-          "mimeType": "application/xml",
-          "extension": "sedml"
+          "namespace": "EDAM",
+          "id": "format_3685"
         }
       ],
       "archiveFormats": [
         {
-          "id": "COMBINE",
-          "name": "COMBINE",
-          "version": "V1",
-          "edamId": "format_3686",
-          "url": "https://combinearchive.org/",
-          "specUrl": "http://identifiers.org/combine.specifications/omex",
-          "mimeType": "application/zip",
-          "extension": "omex"
+          "namespace": "EDAM",
+          "id": "format_3686"
         }
       ],
-	  "references": [
+	  "citations": [
         {
           "title": "Low-order classical Runge-Kutta formulas with stepsize control and their application to some heat transfer problems",
           "authors": "Erwin Fehlberg",
-          "journal": "NASA",
-          "volume": ,
+          "journal": "NASA Technical Report",
           "pages": "1-49",
           "year": 1969,
-          "doi": ""
+          "identifiers": [{
+            "namespace": "NTRS",
+            "id": "NASA-TR-R-315",
+            "url": "https://ntrs.nasa.gov/citations/19690021375"
+          }]
         }
       ],
       "parameters": [
         {
-          "kisaoTerm": {
-            "ontology": "KISAO",
-            "id": "0000209",
-            "name": "relative tolerance",
-            "description": "This parameter is a numeric value specifying the desired relative tolerance the user wants to achieve. A smaller value means that the trajectory is calculated more accurately."
+          "kisaoId": {
+            "namespace": "KISAO",
+            "id": "KISAO_0000209"
           },
           "id": "rel_tol",
           "name": "Relative tolerance",
@@ -219,6 +219,10 @@
       ]
     }
   ],
+  "biosimulators": {
+    "schemaVersion": "1.0.0",
+    "imageVersion": "1.0.0"
+  },
   "created": "2020-01-01T12:00:00Z",
   "updated": "2020-01-01T12:00:00Z"
 }
