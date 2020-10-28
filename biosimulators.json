@@ -9,8 +9,7 @@
     "namespace": "EDAM",
     "id": "format_3973"
   },
-  "authors": [
-    {
+  "authors": [{
       "firstName": "Chris",
       "middleName": "J.",
       "lastName": "Myers"
@@ -20,72 +19,72 @@
       "middleName": null,
       "lastName": "Watanabe"
     },
-	{
+    {
       "firstName": "Tramy",
       "middleName": null,
       "lastName": "Nguyen"
     },
-	{
+    {
       "firstName": "Pedro",
       "middleName": null,
       "lastName": "Fontanarosa"
     },
-	{
+    {
       "firstName": "Michael",
       "middleName": null,
       "lastName": "Zhang"
     },
-	{
+    {
       "firstName": "Zach",
       "middleName": null,
       "lastName": "Zundel"
     },
-	{
+    {
       "firstName": "Mihai",
       "middleName": null,
       "lastName": "Glont"
     },
-	{
+    {
       "firstName": "Nathan",
       "middleName": null,
       "lastName": "Barker"
     },
-	{
+    {
       "firstName": "Scott",
       "middleName": null,
       "lastName": "Glass"
     },
-	{
+    {
       "firstName": "Kevin",
       "middleName": null,
       "lastName": "Jones"
     },
-	{
+    {
       "firstName": "Hiroyuki",
       "middleName": null,
       "lastName": "Kuwahara"
     },
-	{
+    {
       "firstName": "Curtis",
       "middleName": null,
       "lastName": "Madsen"
     },
-	{
+    {
       "firstName": "Nam",
       "middleName": null,
       "lastName": "Nguyen"
     },
-	{
+    {
       "firstName": "Tyler",
       "middleName": null,
       "lastName": "Patterson"
     },
-	{
+    {
       "firstName": "Nicholas",
       "middleName": null,
       "lastName": "Roehner"
     },
-	{
+    {
       "firstName": "Jason",
       "middleName": null,
       "lastName": "Stevens"
@@ -95,14 +94,13 @@
       "middleName": "J.",
       "lastName": "Thomas"
     },
-	{
+    {
       "firstName": "Zhen",
       "middleName": null,
       "lastName": "Zhang"
     }
   ],
-  "citations": [
-    {
+  "citations": [{
       "title": "Design and test of genetic circuits using iBioSim",
       "authors": "Curtis Madsen, Chris J. Myers, Tyler Patterson, Nicholas Roehner, Jason T. Stevens & Chris Winstead",
       "journal": "IEEE Design Test of Computers",
@@ -115,7 +113,7 @@
         "url": "https://doi.org/10.1109/MDT.2012.2187875"
       }]
     },
-	{
+    {
       "title": "Dynamic modeling of cellular populations within iBioSim",
       "authors": "Jason T. Stevens & Chris J. Myers",
       "journal": "ACS Synthetic Biology",
@@ -128,7 +126,7 @@
         "url": "https://doi.org/10.1021/sb300082b"
       }]
     },
-	{
+    {
       "title": "iBioSim: a tool for the analysis and design of genetic circuits",
       "authors": "Chris J. Myers, Nathan Barker, Kevin Jones, Hiroyuki Kuwahara, Curtis Madsen & Nam-Phuong D. Nguyen",
       "journal": "Bioinformatics",
@@ -141,7 +139,7 @@
         "url": "https://doi.org/10.1093/bioinformatics/btp457"
       }]
     },
-	{
+    {
       "title": "iBioSim 3: a tool for model-based genetic circuit design",
       "authors": "Leandro Watanabe, Tramy Nguyen, Michael Zhang, Zach Zundel, Zhen Zhang, Curtis Madsen, Nicholas Roehner & Chris J. Myers",
       "journal": "ACS Synthetic Biology",
@@ -159,66 +157,52 @@
     "namespace": "SPDX",
     "id": "Apache-2.0"
   },
-  "algorithms": [
-    {
-      "id": "hode",
-      "name": "Runge-Kutta-Fehlberg (Hierarchical)",
+  "algorithms": [{
+    "id": "hode",
+    "name": "Runge-Kutta-Fehlberg (Hierarchical)",
+    "kisaoId": {
+      "namespace": "KISAO",
+      "id": "KISAO_0000086"
+    },
+    "modelingFrameworks": [{
+      "namespace": "SBO",
+      "id": "SBO_0000293"
+    }],
+    "modelFormats": [{
+      "namespace": "EDAM",
+      "id": "format_2585"
+    }],
+    "simulationFormats": [{
+      "namespace": "EDAM",
+      "id": "format_3685"
+    }],
+    "archiveFormats": [{
+      "namespace": "EDAM",
+      "id": "format_3686"
+    }],
+    "citations": [{
+      "title": "Low-order classical Runge-Kutta formulas with stepsize control and their application to some heat transfer problems",
+      "authors": "Erwin Fehlberg",
+      "journal": "NASA Technical Report",
+      "pages": "1-49",
+      "year": 1969,
+      "identifiers": [{
+        "namespace": "NTRS",
+        "id": "NASA-TR-R-315",
+        "url": "https://ntrs.nasa.gov/citations/19690021375"
+      }]
+    }],
+    "parameters": [{
       "kisaoId": {
         "namespace": "KISAO",
-        "id": "KISAO_0000086"
+        "id": "KISAO_0000209"
       },
-      "modelingFrameworks": [
-        {
-          "namespace": "SBO",
-          "id": "SBO_0000293"
-        }
-      ],
-      "modelFormats": [
-        {
-          "namespace": "EDAM",
-          "id": "format_2585"
-        }
-      ],
-      "simulationFormats": [
-        {
-          "namespace": "EDAM",
-          "id": "format_3685"
-        }
-      ],
-      "archiveFormats": [
-        {
-          "namespace": "EDAM",
-          "id": "format_3686"
-        }
-      ],
-	  "citations": [
-        {
-          "title": "Low-order classical Runge-Kutta formulas with stepsize control and their application to some heat transfer problems",
-          "authors": "Erwin Fehlberg",
-          "journal": "NASA Technical Report",
-          "pages": "1-49",
-          "year": 1969,
-          "identifiers": [{
-            "namespace": "NTRS",
-            "id": "NASA-TR-R-315",
-            "url": "https://ntrs.nasa.gov/citations/19690021375"
-          }]
-        }
-      ],
-      "parameters": [
-        {
-          "kisaoId": {
-            "namespace": "KISAO",
-            "id": "KISAO_0000209"
-          },
-          "id": "rel_tol",
-          "name": "Relative tolerance",
-          "type": "float",
-          "default": 0.000001
-        }
-      ]
-    }
-  ],
+      "id": "rel_tol",
+      "name": "Relative tolerance",
+      "type": "float",
+      "default": 0.000001
+    }]
+  }],
   "biosimulators": {
     "schemaVersion": "1.0.0",
     "imageVersion": "1.0.0"
