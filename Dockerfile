@@ -24,7 +24,7 @@ RUN apt-get update --fix-missing \
 RUN apt install openjdk-8-jdk -y \
 	&& apt install maven -y \
 	&& apt install git -y \
-	&& git clone https://github.com/MyersResearchGroup/iBioSim.git 
+	&& git clone https://github.com/MyersResearchGroup/iBioSim.git --branch 3.1.0 --depth 1
 
 RUN cd iBioSim \
 	&& mvn package -Dmaven.javadoc.skip=true
