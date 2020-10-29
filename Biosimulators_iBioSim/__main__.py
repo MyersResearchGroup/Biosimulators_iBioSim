@@ -1,6 +1,6 @@
 """ BioSimulators-compliant command-line interface to the `iBioSim <https://github.com/MyersResearchGroup/iBioSim>`_ simulation program.
 
-:Author: Myers Research Group, chris.myers@colorado.edu
+:Author: Myers Research Group <chris.myers@colorado.edu>
 :Date: 2020-06-12
 :Copyright: 2020
 :License: Apache-2.0
