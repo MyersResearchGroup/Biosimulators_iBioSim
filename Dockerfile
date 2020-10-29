@@ -10,8 +10,7 @@ LABEL about.home="https://github.com/MyersResearchGroup/iBioSim"
 LABEL about.documentation="https://github.com/MyersResearchGroup/iBioSim"
 LABEL about.license_file="https://github.com/MyersResearchGroup/iBioSim/blob/master/LICENSE.txt"
 LABEL about.license="Apache-2.0"
-LABEL about.tags=""
-LABEL extra.identifiers.biotools="ibiosim"
+LABEL about.tags="kinetic modeling,dynamical simulation,systems biology,biochemical networks,SBML,SED-ML,COMBINE,OMEX,BioSimulators"
 LABEL maintainer="Chris Myers <chris.myers@colorado.edu>"
 
 # Install requirements
@@ -24,7 +23,7 @@ RUN apt-get update --fix-missing \
 RUN apt install openjdk-8-jdk -y \
 	&& apt install maven -y \
 	&& apt install git -y \
-	&& git clone https://github.com/MyersResearchGroup/iBioSim.git 
+	&& git clone https://github.com/MyersResearchGroup/iBioSim.git --branch 3.1.0 --depth 1
 
 RUN cd iBioSim \
 	&& mvn package -Dmaven.javadoc.skip=true

@@ -1,9 +1,9 @@
 """ Tests of the command-line interface
 
-:Author: Author name <email@organization>
-:Date: YYYY-MM-DD
-:Copyright: YYYY, Owner
-:License: <License, e.g., MIT>
+:Author: Myers Research Group <chris.myers@colorado.edu>
+:Date: 2020-10-29
+:Copyright: 2020
+:License: Apache-2.0
 """
 
 from Biosimulations_utils.simulator.testing import SbmlSedmlCombineSimulatorValidator
@@ -20,7 +20,7 @@ import unittest
 
 class CliTestCase(unittest.TestCase):
     EXAMPLE_ARCHIVE_FILENAME = 'tests/fixtures/BIOMD0000000297.omex'
-    DOCKER_IMAGE = '<organization>/<repository>'
+    DOCKER_IMAGE = 'docker.io/paytonco/ibiosim:latest'
 
     def setUp(self):
         self.dirname = tempfile.mkdtemp()
