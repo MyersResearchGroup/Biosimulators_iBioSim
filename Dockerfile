@@ -19,15 +19,14 @@ RUN apt-get update --fix-missing \
 	&& apt-get install python3.7 -y \
 	&& apt-get install python3-pip -y \
 	&& pip3 install -U setuptools \
-	&& pip3 install python-libsbml
-
-RUN apt install openjdk-8-jdk -y \
+	&& apt install openjdk-8-jdk -y \
 	&& apt install maven -y \
 	&& apt install git -y \
-	&& git clone https://github.com/MyersResearchGroup/iBioSim.git 
-
-RUN cd iBioSim \
-	&& mvn package -Dmaven.javadoc.skip=true
+	&& git clone https://github.com/MyersResearchGroup/iBioSim.git \
+	&& cd iBioSim \
+	&& mvn package -Dmaven.javadoc.skip=true \
+	&& apt-get -y install build-essential 
+	
 
 # Copy code for command-line interface into image and install it
 COPY . /root/Biosimulators_iBioSim

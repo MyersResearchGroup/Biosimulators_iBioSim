@@ -20,6 +20,9 @@ def exec_combine_archive(archive_file, out_dir):
         archive_file (:obj:`str`): path to COMBINE archive
         out_dir (:obj:`str`): directory to store the outputs of the tasks
     """
+    os.environ["BIOSIM"] = os.environ["PWD"] + r"/.."
+    os.environ["PATH"] = os.environ["BIOSIM"]+r"/bin:"+os.environ["BIOSIM"]+r"/lib:"+os.enviorn["PATH"]
+    os.enviroin["LD_LIBRARY_PATH"] = os.environ["BIOSIM"] + r"/lib:" + os.environ["LD_LIBRARY_PATH"]
     if not os.path.isfile(archive_file):
         raise FileNotFoundError("File does not exist: {}".format(archive_file))
         
@@ -29,3 +32,14 @@ def exec_combine_archive(archive_file, out_dir):
     cmd = r"java -jar /iBioSim/analysis/target/iBioSim-analysis-3.1.0-SNAPSHOT-jar-with-dependencies.jar -sim hode "
     os.system(cmd+archive_file)
     shutil.move(archive_file.rsplit('.',1)[0],out_dir)
+    
+    
+    
+    
+    
+    
+    #completed all of these
+#os.environ[‘BIOSIM’] = os.environ[‘PWD’] + ‘/..’
+#os.environ[‘PATH’] = os.environ[‘BIOSIM’]+’/bin:’+os.environ[‘BIOSIM’]+’/lib:’+os.enviorn[‘PATH’]  
+#add ld_library thing should look like:
+#export LD_LIBRARY_PATH=$BIOSIM/lib:$LD_LIBRARY_PATH
