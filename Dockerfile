@@ -10,8 +10,7 @@ LABEL about.home="https://github.com/MyersResearchGroup/iBioSim"
 LABEL about.documentation="https://github.com/MyersResearchGroup/iBioSim"
 LABEL about.license_file="https://github.com/MyersResearchGroup/iBioSim/blob/master/LICENSE.txt"
 LABEL about.license="Apache-2.0"
-LABEL about.tags=""
-LABEL extra.identifiers.biotools="ibiosim"
+LABEL about.tags="kinetic modeling,dynamical simulation,systems biology,biochemical networks,SBML,SED-ML,COMBINE,OMEX,BioSimulators"
 LABEL maintainer="Chris Myers <chris.myers@colorado.edu>"
 
 # Install requirements
@@ -27,6 +26,11 @@ RUN apt-get update --fix-missing \
 	&& mvn package -Dmaven.javadoc.skip=true \
 	&& apt-get -y install build-essential 
 	
+=======
+	&& git clone https://github.com/MyersResearchGroup/iBioSim.git --branch 3.1.0 --depth 1
+
+RUN cd iBioSim \
+	&& mvn package -Dmaven.javadoc.skip=true
 
 # Copy code for command-line interface into image and install it
 COPY . /root/Biosimulators_iBioSim

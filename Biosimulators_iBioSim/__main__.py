@@ -1,6 +1,6 @@
-""" BioSimulators-compliant command-line interface to the `iBioSim <https://async.ece.utah.edu/tools/ibiosim/>`_ simulation program.
+""" BioSimulators-compliant command-line interface to the `iBioSim <https://github.com/MyersResearchGroup/iBioSim>`_ simulation program.
 
-:Author: Myers Research Group, chris.myers@colorado.edu
+:Author: Myers Research Group <chris.myers@colorado.edu>
 :Date: 2020-06-12
 :Copyright: 2020
 :License: Apache-2.0
@@ -17,7 +17,7 @@ class BaseController(cement.Controller):
     class Meta:
         label = 'base'
         description = ("BioSimulatiors-compliant command-line interface to the "
-                       "iBioSim simulation program <https://async.ece.utah.edu/tools/ibiosim/>.")
+                       "iBioSim simulation program <https://github.com/MyersResearchGroup/iBioSim>.")
         help = "iBioSim"
         arguments = [
             (['-i', '--archive'], dict(type=str,

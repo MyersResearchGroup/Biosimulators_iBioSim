@@ -1,0 +1,215 @@
+{
+  "id": "ibiosim",
+  "name": "iBioSim",
+  "version": "3.1.0",
+  "description": "iBioSim is a computer-aided design (CAD) tool aimed for the modeling, analysis, and design of genetic circuits. While iBioSim primarily targets models of genetic circuits, models representing metabolic networks, cell-signaling pathways, and other biological and chemical systems can also be analyzed.",
+  "url": "https://github.com/MyersResearchGroup/iBioSim",
+  "image": "docker.io/paytonco/ibiosim:latest",
+  "format": {
+    "namespace": "EDAM",
+    "id": "format_3973"
+  },
+  "authors": [{
+      "firstName": "Chris",
+      "middleName": "J.",
+      "lastName": "Myers"
+    },
+    {
+      "firstName": "Leandro",
+      "middleName": null,
+      "lastName": "Watanabe"
+    },
+    {
+      "firstName": "Tramy",
+      "middleName": null,
+      "lastName": "Nguyen"
+    },
+    {
+      "firstName": "Pedro",
+      "middleName": null,
+      "lastName": "Fontanarosa"
+    },
+    {
+      "firstName": "Michael",
+      "middleName": null,
+      "lastName": "Zhang"
+    },
+    {
+      "firstName": "Zach",
+      "middleName": null,
+      "lastName": "Zundel"
+    },
+    {
+      "firstName": "Mihai",
+      "middleName": null,
+      "lastName": "Glont"
+    },
+    {
+      "firstName": "Nathan",
+      "middleName": null,
+      "lastName": "Barker"
+    },
+    {
+      "firstName": "Scott",
+      "middleName": null,
+      "lastName": "Glass"
+    },
+    {
+      "firstName": "Kevin",
+      "middleName": null,
+      "lastName": "Jones"
+    },
+    {
+      "firstName": "Hiroyuki",
+      "middleName": null,
+      "lastName": "Kuwahara"
+    },
+    {
+      "firstName": "Curtis",
+      "middleName": null,
+      "lastName": "Madsen"
+    },
+    {
+      "firstName": "Nam",
+      "middleName": null,
+      "lastName": "Nguyen"
+    },
+    {
+      "firstName": "Tyler",
+      "middleName": null,
+      "lastName": "Patterson"
+    },
+    {
+      "firstName": "Nicholas",
+      "middleName": null,
+      "lastName": "Roehner"
+    },
+    {
+      "firstName": "Jason",
+      "middleName": null,
+      "lastName": "Stevens"
+    },
+    {
+      "firstName": "Payton",
+      "middleName": "J.",
+      "lastName": "Thomas"
+    },
+    {
+      "firstName": "Zhen",
+      "middleName": null,
+      "lastName": "Zhang"
+    }
+  ],
+  "references": {
+    "identifiers": [],
+    "citations": [{
+        "title": "Design and test of genetic circuits using iBioSim",
+        "authors": "Curtis Madsen, Chris J. Myers, Tyler Patterson, Nicholas Roehner, Jason T. Stevens & Chris Winstead",
+        "journal": "IEEE Design Test of Computers",
+        "volume": 29,
+        "pages": "32-39",
+        "year": 2012,
+        "identifiers": [{
+          "namespace": "doi",
+          "id": "10.1109/MDT.2012.2187875",
+          "url": "https://doi.org/10.1109/MDT.2012.2187875"
+        }]
+      },
+      {
+        "title": "Dynamic modeling of cellular populations within iBioSim",
+        "authors": "Jason T. Stevens & Chris J. Myers",
+        "journal": "ACS Synthetic Biology",
+        "volume": 2,
+        "pages": "223-229",
+        "year": 2013,
+        "identifiers": [{
+          "namespace": "doi",
+          "id": "10.1021/sb300082b",
+          "url": "https://doi.org/10.1021/sb300082b"
+        }]
+      },
+      {
+        "title": "iBioSim: a tool for the analysis and design of genetic circuits",
+        "authors": "Chris J. Myers, Nathan Barker, Kevin Jones, Hiroyuki Kuwahara, Curtis Madsen & Nam-Phuong D. Nguyen",
+        "journal": "Bioinformatics",
+        "volume": 25,
+        "pages": "2848-2849",
+        "year": 2009,
+        "identifiers": [{
+          "namespace": "doi",
+          "id": "10.1093/bioinformatics/btp457",
+          "url": "https://doi.org/10.1093/bioinformatics/btp457"
+        }]
+      },
+      {
+        "title": "iBioSim 3: a tool for model-based genetic circuit design",
+        "authors": "Leandro Watanabe, Tramy Nguyen, Michael Zhang, Zach Zundel, Zhen Zhang, Curtis Madsen, Nicholas Roehner & Chris J. Myers",
+        "journal": "ACS Synthetic Biology",
+        "volume": 8,
+        "pages": "1560-1563",
+        "year": 2019,
+        "identifiers": [{
+          "namespace": "doi",
+          "id": "10.1021/acssynbio.8b00078",
+          "url": "https://doi.org/10.1021/acssynbio.8b00078"
+        }]
+      }
+    ]
+  },
+  "license": {
+    "namespace": "SPDX",
+    "id": "Apache-2.0"
+  },
+  "algorithms": [{
+    "id": "hode",
+    "name": "Runge-Kutta-Fehlberg (Hierarchical)",
+    "kisaoId": {
+      "namespace": "KISAO",
+      "id": "KISAO_0000086"
+    },
+    "modelingFrameworks": [{
+      "namespace": "SBO",
+      "id": "SBO_0000293"
+    }],
+    "modelFormats": [{
+      "namespace": "EDAM",
+      "id": "format_2585"
+    }],
+    "simulationFormats": [{
+      "namespace": "EDAM",
+      "id": "format_3685"
+    }],
+    "archiveFormats": [{
+      "namespace": "EDAM",
+      "id": "format_3686"
+    }],
+    "citations": [{
+      "title": "Low-order classical Runge-Kutta formulas with stepsize control and their application to some heat transfer problems",
+      "authors": "Erwin Fehlberg",
+      "journal": "NASA Technical Report",
+      "pages": "1-49",
+      "year": 1969,
+      "identifiers": [{
+        "namespace": "NTRS",
+        "id": "NASA-TR-R-315",
+        "url": "https://ntrs.nasa.gov/citations/19690021375"
+      }]
+    }],
+    "parameters": [{
+      "kisaoId": {
+        "namespace": "KISAO",
+        "id": "KISAO_0000209"
+      },
+      "id": "rel_tol",
+      "name": "Relative tolerance",
+      "type": "float",
+      "value": 0.000001
+    }]
+  }],
+  "biosimulators": {
+    "schemaVersion": "1.0.0",
+    "imageVersion": "1.0.0"
+  },
+  "created": "2020-01-01T12:00:00Z",
+  "updated": "2020-01-01T12:00:00Z"
+}
