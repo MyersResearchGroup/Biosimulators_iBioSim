@@ -20,14 +20,19 @@ def exec_combine_archive(archive_file, out_dir):
         archive_file (:obj:`str`): path to COMBINE archive
         out_dir (:obj:`str`): directory to store the outputs of the tasks
     """
-    os.environ["BIOSIM"] = os.environ["PWD"] + r"/.."
-    os.environ["PATH"] = os.environ["BIOSIM"]+r"/bin:"+os.environ["BIOSIM"]+r"/lib:"+os.enviorn["PATH"]
-    os.enviroin["LD_LIBRARY_PATH"] = os.environ["BIOSIM"] + r"/lib:" + os.environ["LD_LIBRARY_PATH"]
+    
+    
+    os.environ["BIOSIM"] = os.popen('pwd').read() + r"/.."
+    os.environ["PATH"] = os.environ["BIOSIM"]+r"/bin:"+os.environ["BIOSIM"]+r"/lib:"+os.environ["PATH"]    
+    os.environ["LD_LIBRARY_PATH"] = os.environ["BIOSIM"] + r"/lib:"
+    
+    
     if not os.path.isfile(archive_file):
         raise FileNotFoundError("File does not exist: {}".format(archive_file))
         
     '''if not zipfile.is_zipfile(archive_file):
         raise IOError("File is not an OMEX Combine Archive in zip format: {}".format(archive_file))'''
+        
         
     cmd = r"java -jar /iBioSim/analysis/target/iBioSim-analysis-3.1.0-SNAPSHOT-jar-with-dependencies.jar -sim hode "
     os.system(cmd+archive_file)
@@ -40,6 +45,6 @@ def exec_combine_archive(archive_file, out_dir):
     
     #completed all of these
 #os.environ[‘BIOSIM’] = os.environ[‘PWD’] + ‘/..’
-#os.environ[‘PATH’] = os.environ[‘BIOSIM’]+’/bin:’+os.environ[‘BIOSIM’]+’/lib:’+os.enviorn[‘PATH’]  
+#os.environ[‘PATH’] = os.environ[‘BIOSIM’]+’/bin:’+os.environ[‘BIOSIM’]+’/lib:’+os.environ[‘PATH’]  
 #add ld_library thing should look like:
 #export LD_LIBRARY_PATH=$BIOSIM/lib:$LD_LIBRARY_PATH

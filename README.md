@@ -37,10 +37,10 @@ optional arguments:
 docker run \
   --tty \
   --rm \
-  --mount type=bind,source="$(pwd)"/tests/fixtures,target=/root/in,readonly \
+  --mount type=bind,source="$(pwd)"/tests/fixtures,target=/root/in \
   --mount type=bind,source="$(pwd)"/tests/results,target=/root/out \
   paytonco/ibiosim:latest \
-    -i /root/in/<Need to Update to Cleaned Archive> \
+    -i /root/in/BIOMD0000000297.omex \
     -o /root/out
 ```
 
