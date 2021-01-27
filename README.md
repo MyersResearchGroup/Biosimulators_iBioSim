@@ -20,13 +20,6 @@ usage: iBioSim [-h] [-d] [-q] -i ARCHIVE [-o OUT_DIR] [--directory DIRECTORY]
                [-p PROPERTIES] [-ti INITTIME] [-tl LIMTIME] [-ot OUTTIME]
                [-pi PRINTINTERVAL] [-m0 MINSTEP] [-m1 MAXSTEP] [-aErr ABSERR]
                [-sErr RELERR] [-sd SEED] [-r RUNS] [-sim SIMULATION] [-v]
-iBioSim: error: the following arguments are required: -i/--archive
-
-C:\Users\payto\Biosimulators_iBioSim>docker run ibiosim -h
-usage: iBioSim [-h] [-d] [-q] -i ARCHIVE [-o OUT_DIR] [--directory DIRECTORY]
-               [-p PROPERTIES] [-ti INITTIME] [-tl LIMTIME] [-ot OUTTIME]
-               [-pi PRINTINTERVAL] [-m0 MINSTEP] [-m1 MAXSTEP] [-aErr ABSERR]
-               [-sErr RELERR] [-sd SEED] [-r RUNS] [-sim SIMULATION] [-v]
 
 BioSimulatiors-compliant command-line interface to the iBioSim simulation program <https://github.com/MyersResearchGroup/iBioSim>.
 
@@ -83,7 +76,7 @@ docker run \
 This package is released under the [Apache-2.0](License)
 
 ## Development Team
-This package was developed by the [Genetic Logic Lab](https://myersresearchgroup.github.io/) at the University of Colorado Boulder.
+This package was developed by the [Genetic Logic Lab](https://geneticlogiclab.org/) at the University of Colorado Boulder.
 
 ## Questions and comments
 Please contact the [Genetic Logic Lab](mailto:chris.myers@colorado.edu) with any questions or comments.
