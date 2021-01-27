@@ -14,8 +14,7 @@ LABEL about.tags="kinetic modeling,dynamical simulation,systems biology,biochemi
 LABEL maintainer="Chris Myers <chris.myers@colorado.edu>"
 
 # Install requirements
-RUN echo no-cache1 \
-	&& apt-get update --fix-missing \
+RUN apt-get update --fix-missing \
 	&& apt-get install python3.7 -y \
 	&& apt-get install python3-pip -y \
 	&& pip3 install -U setuptools \
@@ -25,24 +24,23 @@ RUN echo no-cache1 \
 	&& git clone https://github.com/MyersResearchGroup/iBioSim.git \
 	&& cd iBioSim \
 	&& mvn package -Dmaven.javadoc.skip=true \
-	&& apt-get -y install build-essential 
-
-	
-	#&& git clone https://github.com/MyersResearchGroup/iBioSim.git --branch 3.1.0 --depth 1
+	&& apt-get -y install build-essential \
+	&& apt-get -y install dos2unix \
+	&& apt-get -y install libxml2-dev \
+	&& git clone https://github.com/MyersResearchGroup/iBioSim.git --branch 3.1.0 --depth 1
 
 RUN cd iBioSim \
-	&& mvn package -Dmaven.javadoc.skip=true
+	&& mvn package -Dmaven.javadoc.skip=true 
 
 # Copy code for command-line interface into image and install it
 COPY . /root/Biosimulators_iBioSim
-RUN python3.7 -m pip install /root/Biosimulators_iBioSim \
-	&& pwd
+RUN python3.7 -m pip install /root/Biosimulators_iBioSim
 	
 WORKDIR root/Biosimulators_iBioSim/Dependencies
-RUN chmod +x newbuild.sh
+RUN chmod +x newbuild.sh \
+	&& dos2unix newbuild.sh \
+	&& sh newbuild.sh
 
-
- 
 
 # Entrypoint
 ENTRYPOINT ["iBioSim"]
