@@ -17,22 +17,18 @@ LABEL maintainer="Chris Myers <chris.myers@colorado.edu>"
 RUN apt-get update --fix-missing \
 	&& DEBIAN_FRONTEND=noninteractive \
 	   apt-get install -y maven
-RUN apt-get install python3.7 -y
-RUN apt-get install python3-pip -y
-RUN pip3 install -U setuptools
-RUN apt install openjdk-8-jdk -y
-RUN apt install git -y
-RUN git clone https://github.com/MyersResearchGroup/iBioSim.git
+RUN apt-get install python3.7 -y \
+	&& apt-get install python3-pip -y \
+	&& pip3 install -U setuptools \
+	&& apt install openjdk-8-jdk -y \
+	&& apt install git -y \
+	&& git clone https://github.com/MyersResearchGroup/iBioSim.git
 WORKDIR ./iBioSim
 RUN mvn package -Dmaven.javadoc.skip=true
 WORKDIR ..
-RUN apt-get -y install build-essential
-RUN apt-get -y install dos2unix
-RUN apt-get -y install libxml2-dev
-# RUN git clone https://github.com/MyersResearchGroup/iBioSim.git --branch 3.1.0 --depth 1
-
-# RUN cd iBioSim \
-#	&& mvn package -Dmaven.javadoc.skip=true 
+RUN apt-get -y install build-essential \
+	&& apt-get -y install dos2unix \
+	&& apt-get -y install libxml2-dev
 
 # Copy code for command-line interface into image and install it
 COPY . /root/Biosimulators_iBioSim
